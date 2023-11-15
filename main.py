@@ -6,7 +6,7 @@ import requests
 
 # CSV에 있는 x,y 좌표 값을 불러옴
 # 데이터에서 NaN은 fillna('')을 통해 공백으로 치환
-geo_coordinate = pd.read_csv("c:\\Temp\\geo_coordi.csv", encoding='CP949').fillna('')  
+geo_coordinate = pd.read_csv("geo_coordi.csv", encoding='CP949').fillna('')  
 
 category_mapping = {
     "T1H" : "기온(℃)",
