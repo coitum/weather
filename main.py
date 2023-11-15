@@ -95,7 +95,7 @@ step3 = st.selectbox('동/리', options=filtered_data_step3['동/리'].unique())
 # 사용자 선택에 따른 데이터 필터링
 selected_data = filtered_data_step3[filtered_data_step3['동/리'] == step3]
 
-st.write(selected_data)
+# st.write(selected_data)
 
 # 선택된 데이터 표시
 st.write('선택된 지역:', step1, step2, step3)
@@ -110,9 +110,3 @@ if st.button('조회'):
             height=250,
             color=["#FF0000"]
             )
-        
-
-# add_selectbox = st.sidebar.selectbox(
-#     'How would you like to be contacted?',
-#     ('Email', 'Home phone', 'Mobile phone')
-# )
