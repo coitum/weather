@@ -50,7 +50,7 @@ def make_api_request(x,y):
         'pageNo': page_no,
         'numOfRows': num_of_rows,
         'dataType': data_type,
-        'base_date' : base_date,
+        'base_date' : datetime.now().strftime('%Y%m%d'),
         'base_time' : str(i)+"00",
         'nx': x,
         'ny': y
